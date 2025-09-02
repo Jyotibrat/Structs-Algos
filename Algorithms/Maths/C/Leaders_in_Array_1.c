@@ -1,18 +1,17 @@
-
-#include<iostream>
-using namespace std;
+#include<stdio.h>
+#include<stdbool.h>
 
 int main(){
 
     int n, k = 0;
-    cout << "Enter the size of the array: ";
-    cin >> n;
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
 
     int array[n];
 
-    cout << "Enter the numbers in the array: ";
+    printf("Enter the numbers in the array: ");
     for(int i = 0; i < n; i++){
-        cin >> array[i];
+        scanf("%d", &array[i]);
     }
 
     bool isLeader = true;
@@ -26,20 +25,20 @@ int main(){
                 break;
             }
         }
-        if(isLeader){
+        if(isLeader == true){
             leaders[k] = array[i];
             k++;
         }
     }
 
-    cout << "The Leaders in the array: ";
+    printf("The Leaders in the array: ");
     for(int i = 0; i < k; i++){
         if(i == (k - 1)){
-            cout << leaders[i] << " ";
+            printf("%d ", leaders[i]);
         }else{
-            cout << leaders[i] << ", ";
+            printf("%d, ", leaders[i]);
         }
     }
-    
+
     return 0;
 }
