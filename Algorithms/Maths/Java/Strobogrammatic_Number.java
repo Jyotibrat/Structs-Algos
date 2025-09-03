@@ -7,7 +7,7 @@ public class Strobogrammatic_Number{
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the String: ");
+        System.out.print("Enter the Number: ");
         String n = sc.nextLine();
 
         Map<Character, Character> map = new HashMap<Character,Character>();
