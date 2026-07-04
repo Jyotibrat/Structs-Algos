@@ -25,7 +25,7 @@ long long life_graph_func(int day, int month, int year)
     int startAge = 17;
 
     // Plot until age 100
-    for(int age = startAge; age <= 100; age++)
+    for(auto age{startAge}; age <= 100; ++age)
     {
         int digit = digits[(age - startAge) % digits.length()] - '0';
 

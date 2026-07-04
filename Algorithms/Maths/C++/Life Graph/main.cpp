@@ -18,7 +18,7 @@ int main()
     bool valid = false;
 
     // Allow the user up to 3 attempts
-    for (int attempt = 1; attempt <= 3; attempt++)
+    for(auto attempt{1}; attempt <= 3; ++attempt)
     {
         cout << "Enter your Date of Birth (DD/MM/YYYY): ";
         getline(cin, DOB);
